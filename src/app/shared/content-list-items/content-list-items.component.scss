@@ -1,0 +1,82 @@
+.movieRow {
+    margin-top: -83px;
+    margin-bottom: 125px;
+}
+
+.movieRow--title {
+    display: inline-block;
+}
+
+.movieRow--title h2 {
+    margin: 0px 0px 10px 59px;
+    cursor: pointer;
+}
+
+.movieRow--title h2 svg {
+    font-size: 26px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.2s;
+}
+
+.movieRow--title a {
+    color: inherit;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.movieRow--listArea::-webkit-scrollbar {
+    display: none;
+}
+
+.movieRow--list {
+    transition: all ease 0.5s;
+    margin: 0px 0px 0px 59px;
+}
+
+.movieRow--item {
+    display: inline-block;
+    width: 225px;
+    cursor: pointer;
+    margin-right: 7px;    
+}
+
+.movieRow--item img {
+    width: 100%;
+    transform: scale(1);
+    transition: all ease 0.2s;
+}
+
+.movieRow--item img:hover {
+    transform: scale(1.1);
+}
+
+.movieRow:hover .movieRow--title h2 svg {
+    opacity: 1;
+}
+
+// .swiper {
+//     margin: 0 20px 0 30px;
+// }
+
+// .swiper-button-next, .swiper-button-prev {
+//     opacity: 0;
+//     transition: all ease 0.5s;
+//     font-weight: bolder;
+//     color: inherit;
+//     padding: 20px;
+//     overflow: hidden;
+// }
+
+.movieRow:hover .swiper-button-next, .movieRow:hover .swiper-button-prev {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media(max-width: 760px) {
+    .swiper-button-next, .swiper-button-prev {
+        opacity: 1;
+    }
+}
